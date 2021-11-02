@@ -19,6 +19,10 @@ console.log(addedApps.join('\n'));
     /* 
         xmlfilter.js
 
+            const contentOfTag = R.curry(
+                (xmlNode, tagName) => xmlNode.getElementsByTagName(tagName)[0].textContent
+            );
+
             const getGitHubProject = xmlNode => contentOfSource(xmlNode).replace('https://github.com/', '');
 
             const elementsToArray = nodes => {
@@ -27,6 +31,23 @@ console.log(addedApps.join('\n'));
                     arr.push(nodes[i]);
                 return arr;
             };
+
+            const isValid = R.curry(
+                (app, addedAfterYear, updatedAfterYear) => {
+                    if (!contentOfSource(app).includes('github.com'))
+                        return false;
+
+                    const addedDate = new Date(contentOfAdded(app));
+                    if (addedDate.getFullYear() < addedAfterYear)
+                        return false;
+
+                    const lastUpdatedDate = new Date(contentOfUpdated(app));
+                    if (lastUpdatedDate.getFullYear() < updatedAfterYear)
+                        return false;
+
+                    return true;
+                }
+            );
     
     */
 
