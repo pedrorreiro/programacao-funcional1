@@ -59,7 +59,9 @@ console.log(addedApps.join('\n'));
     */
 
 // (Exercício 3) Identifique quais funções são curried
-    // Adicione um comentário identificando-as
+    /* 
+        contentOfTag e isValid
+    */
 
 // (Exercício 4) Identifique quais funções são high-order
     // Adicione um comentário identificando-as
