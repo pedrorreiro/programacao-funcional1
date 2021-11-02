@@ -16,7 +16,19 @@ const addedApps = elementsToArray(document.getElementsByTagName('application'))
 console.log(addedApps.join('\n'));
  
 // (Exercício 1) Identifique todas as declarações de funções neste projeto
-    // Adicione um comentário identificando-as
+    /* 
+        xmlfilter.js
+
+            const getGitHubProject = xmlNode => contentOfSource(xmlNode).replace('https://github.com/', '');
+
+            const elementsToArray = nodes => {
+                const arr = [];
+                for (let i = 0; i < nodes.length; i++)
+                    arr.push(nodes[i]);
+                return arr;
+            };
+    
+    */
 
 // (Exercício 2) Identifique quais funções no projeto possuem efeitos colaterais (side-effects)
     // Adicione um comentário identificando-as
