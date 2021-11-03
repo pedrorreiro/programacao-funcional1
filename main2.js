@@ -25,7 +25,7 @@ addedApps.map(nome => {
 
     aplicacao = {
         name: nome,
-        added: "foda-se"
+        added: "teste"
     }
     
     vetor.push(aplicacao);
